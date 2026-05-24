@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pth
+*.csv
+.DS_Store
+.env
+venv/
+
+checkpoints/
+results/
