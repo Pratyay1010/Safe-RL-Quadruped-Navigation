@@ -161,7 +161,7 @@ results/evaluation.csv
 The evaluation file stores per-episode performance metrics collected during policy evaluation.
 
 | Column | Description |
-|||
+| --- | --- |
 | `episode` | Evaluation episode index |
 | `return` | Total episodic reward |
 | `cost` | Total episodic safety cost |
@@ -171,7 +171,6 @@ This enables quick analysis of:
 - policy reward performance
 - safety constraint violations
 - reward-cost tradeoffs across episodes
-
 
 
 ## PPO-Lagrangian
