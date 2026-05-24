@@ -1,14 +1,14 @@
 # Safe RL for Quadruped Navigation
 
 <p align="center">
-  <img src="assets/doggo_policy.gif" width="750"/>
+  <img src="assets/doggo_policy.gif" width="640"/>
 </p>
 
 <p align="center">
   PPO-Lagrangian for safe quadruped navigation in Safety-Gymnasium.
 </p>
 
----
+
 
 ## Overview
 
@@ -23,7 +23,7 @@ The implementation focuses on:
 
 The repository is intentionally lightweight and designed to resemble a clean experimental robotics research codebase.
 
----
+
 
 ## Motivation
 
@@ -40,7 +40,7 @@ This project investigates:
 
 using the Doggo robot environment from Safety-Gymnasium.
 
----
+
 
 ## Features
 
@@ -51,7 +51,7 @@ using the Doggo robot environment from Safety-Gymnasium.
 - Compact modular codebase
 - Evaluation pipeline with CSV logging
 
----
+
 
 ## Environment
 
@@ -60,7 +60,7 @@ using the Doggo robot environment from Safety-Gymnasium.
 - Physics Backend: MuJoCo
 - Deep Learning Framework: PyTorch
 
----
+
 
 ## Repository Structure
 
@@ -90,7 +90,7 @@ Safe-RL-Quadruped-Navigation/
 └── .gitignore
 ```
 
----
+
 
 ## Installation
 
@@ -122,7 +122,7 @@ pip install -r requirements.txt
 pip install safety-gymnasium
 ```
 
----
+
 
 ## Training
 
@@ -138,7 +138,7 @@ The best checkpoint will be saved to:
 checkpoints/best_model.pth
 ```
 
----
+
 
 ## Evaluation
 
@@ -154,14 +154,14 @@ Evaluation statistics are saved to:
 results/evaluation.csv
 ```
 
----
+
 
 ## About `evaluation.csv`
 
 The evaluation file stores per-episode performance metrics collected during policy evaluation.
 
 | Column | Description |
-|---|---|
+|||
 | `episode` | Evaluation episode index |
 | `return` | Total episodic reward |
 | `cost` | Total episodic safety cost |
@@ -172,7 +172,7 @@ This enables quick analysis of:
 - safety constraint violations
 - reward-cost tradeoffs across episodes
 
----
+
 
 ## PPO-Lagrangian
 
@@ -188,16 +188,12 @@ The implementation includes:
 
 The approach follows constrained reinforcement learning formulations commonly used in safe robotic learning.
 
----
+
 
 ## Results
 
-| Metric | Value |
-|---|---|
-| Mean Return | -- |
-| Mean Cost | -- |
+The trained policy demonstrates stable goal-directed navigation while reducing safety violations under constrained PPO optimization.
 
----
 
 ## References
 
@@ -207,12 +203,12 @@ The approach follows constrained reinforcement learning formulations commonly us
 
 ### Safe RL / PPO-Lagrangian
 - Ray et al. — *Benchmarking Safe Exploration in Deep Reinforcement Learning*  
-  https://arxiv.org/abs/1910.01708
+  https://cdn.openai.com/safexp-short.pdf
 
-### Safe RL
-- Ray et al. — *Benchmarking Safe Exploration in Deep Reinforcement Learning*  
-  https://arxiv.org/abs/1910.01708
+### PID Lagrangian Methods
+- Stooke et al. — *Responsive Safety in Reinforcement Learning by PID Lagrangian Methods*  
+  https://arxiv.org/abs/2007.03964
 
 ### Safety-Gymnasium
 - Ji et al. — *Safety-Gymnasium: Safe Reinforcement Learning Benchmarking Platform*  
-  https://arxiv.org/abs/2310.20431
+  https://proceedings.neurips.cc/paper_files/paper/2023/file/3c557a3d6a48cc99444f85e924c66753-Paper-Datasets_and_Benchmarks.pdf
