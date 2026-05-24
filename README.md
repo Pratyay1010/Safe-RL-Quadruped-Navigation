@@ -97,7 +97,7 @@ Safe-RL-Quadruped-Navigation/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Safe-RL-Quadruped-Navigation.git
+git clone https://github.com/Pratyay1010/Safe-RL-Quadruped-Navigation.git
 
 cd Safe-RL-Quadruped-Navigation
 ```
